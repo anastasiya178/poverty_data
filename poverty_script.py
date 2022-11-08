@@ -27,7 +27,7 @@ INDICATORS = [
 ]
 
 # build URL params
-url_params = {
+URL_PARAMS = {
     "get": ",".join(INDICATORS),
     "for": f"county:{COUNTRY_CODE}",
     "in": f"state:{STATE_CODE}",
@@ -70,7 +70,7 @@ def save_to_csv(header: list, csv_filename: str, json_data: list) -> None:
 
 if __name__ == "__main__":
     # get poverty data
-    data = get_data(URL, url_params, AUTH)
+    data = get_data(URL, URL_PARAMS, AUTH)
 
     # save data to CSV
     save_to_csv(CSV_HEADER, CSV_FILENAME, data)
