@@ -1,9 +1,16 @@
-Extract povery data as per the task received.
+Python script for extracting povery data and saving it into CSV file (as per the task received).
 
-Installation guide:
+## Installation guide:
+Prerequisite: make sure you have Python3 installed on your local machine. 
+If not, install from here: https://www.python.org/downloads/.
 
-1. Clone from Github: 
-2. Set-up virtual environment:
+The version used for this script is Python 3.8.9.
+
+1. Clone the project from Github: 
+
+[https://github.com/anastasiya178/poverty_data.git](https://github.com/anastasiya178/poverty_data)
+
+3. Set-up virtual environment:
 
 `cd your-project`
 
@@ -18,13 +25,14 @@ Activate virtual environment:
 `pip install -r requirements.txt`
 
 4. Rename .env_example to .env to be able to access AUTH data.
-Please note, at the moment auth data contains dummy API KEY and SECRET as the service used for this script doesn't 
-require authentication
 
-5. Run poverty_script.py in terminal or in the IDE of your choice. 
+Please note, at the moment auth data contains empty API KEY and SECRET as the service used for this script doesn't 
+require authentication. 
 
-Example how to do in in ternminal:
+5. Run poverty_script.py in the terminal or in the IDE of your choice. 
 
-`python <path to the file>/poverty_script.py
+Example how to do in in macOS ternminal:
 
+`python <absolute path to the file>/poverty_script.py
 
+6. Check ***poverty_2018_Harris_TX_.csv*** file under the root folder of the project.
